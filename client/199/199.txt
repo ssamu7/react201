@@ -1,0 +1,5 @@
+sudo su -
+cd /home/ubuntu/reactMapKakao
+screen -L npm start
+sudo su -
+fuser -k 80/tcp

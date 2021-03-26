@@ -1,0 +1,12 @@
+sudo su -
+cd /home/ubuntu/react200
+npm install
+npm install bcrypt@3.0.6
+npm install nodemon
+
+cd client
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+apt-get update  
+apt-get install yarn
+yarn install

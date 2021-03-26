@@ -1,0 +1,18 @@
+use react;
+
+CREATE TABLE `react_swtool` (
+  `swt_code` varchar(100) NOT NULL COMMENT 'SW툴 코드',
+  `swt_toolname` varchar(100) DEFAULT NULL COMMENT '툴 이름',
+  `swt_function` text COMMENT '상세 기능',
+  `swt_imagepath` varchar(100) DEFAULT NULL COMMENT '라벨 이미지 경로',
+  `swt_big_imgpath` varchar(100) DEFAULT NULL COMMENT '메인 이미지 경로',
+  `swt_comments` text COMMENT '설명',
+  `swt_demo_site` varchar(100) DEFAULT NULL COMMENT '데모 URL',
+  `swt_manual_path` varchar(100) DEFAULT NULL COMMENT '메뉴얼 파일 경로',
+  `swt_github_url` varchar(100) DEFAULT NULL COMMENT 'Github URL',
+  `reg_date` varchar(100) DEFAULT NULL COMMENT ' 등록날짜',
+  `reg_user` varchar(100) DEFAULT NULL COMMENT ' 등록자',
+  `update_date` varchar(100) DEFAULT NULL COMMENT ' 수정날짜',
+  `update_user` varchar(100) DEFAULT NULL COMMENT ' 수정자',
+  PRIMARY KEY (`swt_code`)
+);

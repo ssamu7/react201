@@ -1,0 +1,16 @@
+use react;
+CREATE TABLE `react_user` (
+  `username` varchar(100) DEFAULT NULL COMMENT '사용자 이름',
+  `userorg` varchar(100) DEFAULT NULL COMMENT '소속기관',
+  `useremail` varchar(100) COMMENT '이메일',
+  `userpassword` varchar(100) DEFAULT NULL COMMENT '로그인 비밀번호',
+  `usermajor` varchar(100) DEFAULT NULL COMMENT '전공',
+  `userphone` varchar(100) DEFAULT NULL COMMENT '휴대전화번호',
+  `userflag` varchar(100) DEFAULT NULL COMMENT '승인여부',
+  `reg_date` varchar(100) DEFAULT NULL COMMENT '등록날짜',
+  `reg_user` varchar(100) DEFAULT NULL COMMENT '등록자',
+  `update_date` varchar(100) DEFAULT NULL COMMENT '수정날짜',
+  `update_user` varchar(100) DEFAULT NULL COMMENT '수정자',
+  PRIMARY KEY (`useremail`)
+);
+ALTER TABLE react.react_user convert to charset utf8;

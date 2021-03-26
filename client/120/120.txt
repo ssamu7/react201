@@ -1,0 +1,7 @@
+-- update, delete가 되지 않을 때 > safe모드 해제
+SET SQL_SAFE_UPDATES = 0;
+
+-- insert 쿼리결과 한글이 깨졌을 때 > 테이블 charset을 utf8로 수정
+ALTER TABLE react.react_swtool convert to charset utf8;
+
+delete from react_swtool;

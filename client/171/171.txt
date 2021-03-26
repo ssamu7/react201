@@ -1,0 +1,9 @@
+use react;
+CREATE TABLE `react_batch_log` (
+  `batch_cd` varchar(100) COMMENT '배치 코드',
+  `batch_nm` varchar(100) DEFAULT NULL COMMENT '배치명',
+  `batch_log` varchar(100) DEFAULT NULL COMMENT '배치내용',
+  `reg_date` varchar(100) DEFAULT NULL COMMENT '등록날짜',
+  PRIMARY KEY (`batch_cd`)
+);
+ALTER TABLE react.react_batch_log convert to charset utf8;

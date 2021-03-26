@@ -1,14 +1,23 @@
 {
-  "name": "hello-world",
-  "version": "1.0.0",
-  "description": "Hello World, NodeJS!!!",
-  "main": "src/app.js",
+  "name": "nodefolder",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.0.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "mybatis-mapper": "^0.6.5",
+    "mysql": "^2.18.1"
   }
 }
